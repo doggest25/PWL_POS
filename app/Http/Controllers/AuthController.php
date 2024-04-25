@@ -43,7 +43,7 @@ class AuthController extends Controller
             //kalau berhasil simpan data user yg di variabel $user
 
             $user =Auth::user();
-
+            
             //cek lagi jika level user admin maka arahkan ke halaman admin
             if($user->level_id == '1'){
                 //dd($user->level_id)
